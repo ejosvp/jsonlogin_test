@@ -1,0 +1,9 @@
+login:
+  path:     /api/login
+  defaults: { _controller: AppBundle:Default:index, _format: json }
+  requirements:
+      _format:  json
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
